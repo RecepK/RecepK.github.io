@@ -26,9 +26,9 @@
             
             if(typeof callback == "function")
             callback(data);
-            } else {
+        } else {
                 console.error(request.status, request.statusText);
-            }
+        }
     };
 
     request.onerror = function (e) {
@@ -73,7 +73,7 @@ function getLastProduct(item, index, arr){
     });
 }
 
-function createDiv(value) {
+function createDiv(value, tag="main") {
     var div = document.createElement("div");
     div.style.display = "flex";
     div.style.justifyContent = "center";
@@ -82,10 +82,10 @@ function createDiv(value) {
     div.style.background = "blue";
     div.style.color = "white";
     div.innerHTML = value;
-    document.getElementById("main").appendChild(div);
+    document.getElementById(tag).appendChild(div);
 }
 
-function createBr() {
+function createBr(tag="main") {
     var br = document.createElement("br");
-    document.getElementById("main").appendChild(br);
+    document.getElementById(tag).appendChild(br);
 }
