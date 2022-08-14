@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dene.me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono|Roboto:300">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="assets/styles.css">
+        <script type="text/javascript" src="assets/ui.js"></script>
+        <script type="text/javascript" src="assets/api-iar.js"></script>
+        <script type="text/javascript" src="assets/api-markets.js"></script>
+    </head>
+    <body>     
+        <table>
+            <tr>
+                <th>iar</th>
+                <th>market</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div id="main">
+                        <div class="card">
+                            <div class="container"/>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div id="market">
+                        <div class="card">
+                            <div class="container"/>
+                        </div>
+                    </div>
+                </td>
+        </table>
+
+        <script>
+            setIARApi();
+            setMarketApi();
+        </script>
+    </body>
+</html>
