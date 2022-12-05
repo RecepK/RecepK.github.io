@@ -1,4 +1,4 @@
-const cors_url = "https://cors-anywere.herokuapp.com"
+const cors_url = "https://cors-anywhere.herokuapp.com"
 const base_url = "https://www.gramaltin.com"
 const default_url = "-gr-24-ayar-iar-gram-altin"
 
@@ -16,7 +16,8 @@ const product_05 = "5"
 const productList = [
     product_05, 
     product_10,
-    product_20
+    product_20,
+    product_50
 ];
 
 function getProducts(product, callback) {
